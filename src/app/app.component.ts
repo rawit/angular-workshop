@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  title = 'Chat app';
+
+  items: any[] = [
+    {
+      name : 'Karl',
+      message : 'Hello world!'
+    },
+    {
+      name : 'Tone',
+      message : 'Hello Karl!'
+    },
+    {
+      name : 'Karl',
+      message : 'Hi Tone!'
+    },
+  ];
+
 }
