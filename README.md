@@ -1,3 +1,26 @@
+
+Requirements:
+
+* Git installed on development machine
+* node/npm installed on development machine
+* Angular CLI installed globally (npm install @angular/cli)
+
+Install:
+
+* git pull https://github.com/rawit/angular-workshop.git
+* cd angular-workshop
+* npm install
+
+For start, stop, build, test etc, see below
+
+Branches:
+
+* master: Clean Angular CLI install (ng new angular-workshop)
+* messages: Added list of messages to AppComponent and template
+* input_field: Added input field to template and connected with message list in component
+* firebase: Added Firebase support for message list with AngularFire
+
+
 # AngularWorkshop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
