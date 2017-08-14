@@ -1,7 +1,12 @@
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}!
+    Welcome to {{title}}, {{userName}}!
   </h1>
+</div>
+<div style="margin-bottom: 20px">
+  <label>Melding</label>
+  <input #message>
+  <button (click)="send(message.value); message.value='' ">Send</button>
 </div>
 <div>Messages:</div>
 <ul>

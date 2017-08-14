@@ -7,21 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'Chat app';
+  title = 'Chat-app';
+  userName = 'Ragnar';
 
-  items: any[] = [
-    {
-      name : 'Karl',
-      message : 'Hello world!'
-    },
-    {
-      name : 'Tone',
-      message : 'Hello Karl!'
-    },
-    {
-      name : 'Karl',
-      message : 'Hi Tone!'
-    },
-  ];
+  items: any[] = [];
+
+  send(message : String) {
+    this.items.push({ name : this.userName, message : message });
+  }
 
 }
