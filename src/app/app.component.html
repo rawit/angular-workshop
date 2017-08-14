@@ -10,7 +10,7 @@
 </div>
 <div>Messages:</div>
 <ul>
-  <li *ngFor="let item of items">
+  <li *ngFor="let item of items | async ">
     {{ item.name }} : {{ item.message }}
   </li>
 </ul>
