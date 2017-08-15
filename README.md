@@ -16,8 +16,8 @@ For start, stop, build, test etc, see below
 Branches:
 
 * master: Clean Angular CLI install (ng new angular-workshop)
-* messages: Added list of messages to AppComponent and template
-* input_field: Added input field to template and connected with message list in component
+* messages: Added list of messages to AppComponent and template (Endrede filer: app-component.html, app.component.ts)
+* input_field: Added input field to template and connected with message list in component (Endrede filer: app-component.html, app.component.ts)
 * firebase: Added Firebase support for message list with AngularFire
 
 
