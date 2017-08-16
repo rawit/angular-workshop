@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'Chat-app';
-  userName = 'Ragnar';
+  userName = 'Endre til ditt navn!';
 
   items: any[] = [];
 
