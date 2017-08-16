@@ -9,7 +9,7 @@ import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database
 export class AppComponent {
 
   title = 'Chat-app';
-  userName = 'Ragnar';
+  userName = 'Endre til ditt navn!';
 
   items: FirebaseListObservable<any[]>;
 
