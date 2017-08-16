@@ -18,7 +18,9 @@ export class AppComponent {
   }
 
   send(message : String) {
-    this.items.push({ name : this.userName, message : message });
+    if (message) {
+      this.items.push({ name : this.userName, message : message });
+    }
   }
 
 }
