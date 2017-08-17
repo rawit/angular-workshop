@@ -4,6 +4,7 @@ import {AngularFireModule} from "angularfire2";
 import {AngularFireDatabase} from "angularfire2/database";
 
 import { AppComponent } from './app.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 const config = {
   apiKey: "AIzaSyALB11UiMa3WmOb8eEy299JENLRxQ480wU",
@@ -20,6 +21,7 @@ const config = {
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AngularFireModule.initializeApp(config),
   ],
   providers: [ AngularFireDatabase ],

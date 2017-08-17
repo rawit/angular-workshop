@@ -4,9 +4,13 @@
   </h1>
 </div>
 <div style="margin-bottom: 20px">
-  <label>Melding</label>
-  <input #message>
-  <button (click)="send(message.value); message.value='' ">Send</button>
+
+  <form [formGroup]="messageForm">
+    <label for="message">Melding</label>
+    <input #message name="message" id="message" formControlName="text"/>
+    <button (click)="send()">Send</button>
+  </form>
+
 </div>
 <div>Messages:</div>
 <ul>
