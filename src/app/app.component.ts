@@ -11,15 +11,15 @@ export class AppComponent {
   title = 'Chat-app';
   userName = 'Endre til ditt navn!';
 
-  items: FirebaseListObservable<any[]>;
+  messages: FirebaseListObservable<any[]>;
 
   constructor(db: AngularFireDatabase) {
-    this.items = db.list('/items');
+    this.messages = db.list('/messages');
   }
 
-  send(message : String) {
-    if (message) {
-      this.items.push({ name : this.userName, message : message });
+  send(text : String) {
+    if (text) {
+      this.messages.push({ name : this.userName, text : text });
     }
   }
 
