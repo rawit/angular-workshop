@@ -7,7 +7,7 @@
 
   <form [formGroup]="messageForm">
     <label for="message">Melding</label>
-    <input #message name="message" id="message" formControlName="text"/>
+    <input name="message" id="message" formControlName="text"/>
     <button (click)="send()">Send</button>
   </form>
 
