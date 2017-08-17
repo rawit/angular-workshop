@@ -9,11 +9,12 @@ export class AppComponent {
 
   title = 'Chat-app';
   userName = 'Endre til ditt navn!';
+  messages: any[] = [];
 
-  items: any[] = [];
-
-  send(message : String) {
-    this.items.push({ name : this.userName, message : message });
+  send(text : String) {
+    if (text) {
+      this.messages.push({ name : this.userName, text : text });
+    }
   }
 
 }
