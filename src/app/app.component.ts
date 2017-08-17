@@ -9,18 +9,18 @@ export class AppComponent {
 
   title = 'Chat app';
   userName = 'Endre til ditt navn!';
-  items: any[] = [
+  messages: any[] = [
     {
       name : 'Karl',
-      message : 'Hello world!'
+      text : 'Hello world!'
     },
     {
       name : 'Tone',
-      message : 'Hello Karl!'
+      text : 'Hello Karl!'
     },
     {
       name : 'Karl',
-      message : 'Hi Tone!'
+      text : 'Hi Tone!'
     },
   ];
 
